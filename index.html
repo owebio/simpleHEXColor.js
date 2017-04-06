@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title> simpleHEXColor.js </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9;"/>
+  <meta name="description" content="Another digested hex view for human's quick recognition.">
+  <meta name="keywords" content="hex, sha, hash, color, JavaScript">
+  <meta name="author" content="oneiroi, oweb.io">
+  <link href="assets/style.css" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="assets/sha.js"></script>
+  <script src="simpleHEXColor.js"></script>
+  <script src="index.js"></script>
+  <script src="https://use.fontawesome.com/d1e0079ea8.js"></script>
+</head>
+<body>
+<div id="colorHEX">
+<h1>
+  <img src="assets/sample.png"> simpleHEXColor.js
+  <div id="moto"> Another digested hex view for human's quick recognition. </div>
+</h1>
+
+<h2> goal </h2>
+<ul>
+ <li> To help human's quick recognition of familiar things from different or strange others when encountering very frequently.</li>
+ <li> One situation is to use SHA-256 for user's ID or other's ID while people's name or nickname can be same or be duplicated evilly.</li>
+ <li> It's not to retrieve accurate info back again, but to find familiar one easily by color and type if anything can be changed to digital resource.</li>
+</ul>
+
+<div id="content">
+  <div id="content-left">
+    <h2> hex </h2>
+    <p>At least it requires 3*6*2 letters to create one. </p>
+    <textarea id="hexResult">64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c</textarea>
+  </div>
+  <div id="content-right">
+    <h2> text </h2>
+    <p>If you need to generate hex, use this one.</p>
+    <div>
+      <textarea id="input-text">Hello world</textarea>
+    </div>
+    <button id="toSHA-256">to SHA-256 </button>
+    <button id="toSHA-512">to SHA-512 </button>
+    <button id="toSHA-1">to SHA-1 </button>
+  </div>
+</div>
+<div id="content-result">
+  <h2> result </h2>
+  title : <input id="hex-title" value="Hello">
+  <button id="hexToColor">HEX › COLOR </button>
+  <div id="result"></div>
+</div>
+
+<h2> idea, how to create </h2>
+<ol>
+  <li> The 24bit/3byte RGB color is minimized to 6 colors. RGB = 0|1, 0|1, 0|1 </li>
+  <li> The first and last HEX are used for deciding pattern. <br> All are 7 types : normal, top, middle, bottom, half, diagonal, diagonal2. </li>
+  <li> The second HEX from the beginnning decides if it's rotated or not. </li>
+  <li> The second HEX from the end decides if it's round one or not. </li>
+  <li> The rest hex will be printed out together if those are not used to make. </li>
+</ol>
+<h2> misc. </h2>
+
+<a href="simpleHEXColor.js" download> simpleHEXColor.js Download </a>
+<pre>simpleHEXColor(hex, parentElement, title); </pre>
+<ul>
+  <li> hex : necessary arguement. </li>
+  <li> parentElement : it can be omitted and this function returns DOM element </li>
+  <li> title : it can be omitted. </li>
+  <li> * data-hex attribute at the element if you need to get hex </li>
+</ul>
+<p>
+  IE10+ and other modern browsers.
+</p>
+</div>
+
+<div id="footer">
+  <a id="github-link" href="//www.github.com/owebio/simpleHEXColor.js"><i class="fa fa-github" aria-hidden="true"></i></a>
+  oweb.io / oneiroi
+</div>
+
+</body>
+</html>

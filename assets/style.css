@@ -1,0 +1,53 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css); /* 'Noto Sans KR' */
+@import url(//fonts.googleapis.com/css?family=Roboto:100,400); /* 'Roboto' */
+
+html, body {margin:0;padding:0;height:100%;}
+table {width:100%;border-collapse:collapse;}
+body  {font:14px/1.5 'Noto Sans KR', sans-serif;color:#1C1C1C}
+
+.clr::after {content:"";display:table;clear:both;}
+
+h1 {position:relative;margin:0;padding:40px 0 35px;font-weight: 100;font-size:36px;}
+/*h1:before {position:absolute;content:"";top:30px;left:0;height:5px;width:50px;background:#2C3894}*/
+#moto {font:italic 18px/18px Roboto, sans-serif;color:#5D5D5D}
+h1 img {float:left; vertical-align: text-top; margin-right: 15px}
+#content {position:relative;overflow:hidden}
+#content-left, #content-right {float:left;width:50%}
+#content-result {clear:both}
+
+
+#colorHEX {
+  width: 960px;
+  margin: 0 auto;
+  color: #3E329A;
+}
+
+#input-text {
+  display: block;
+  margin: 0;
+  width: 300px;
+  height: 80px;
+  margin-bottom: 1em
+}
+#hexResult {
+  width: 300px;
+  line-height: 22px;
+  font-size: 14px;
+  font-family: consolas, courier, monospace;
+  word-break: break-all;
+  padding: 5px 0;
+  min-height: 88px;
+  border: 1px solid #9E9E9E;
+}
+#result {
+  margin: 15px 0;
+  width: 90px; height: 90px; font-family: consolas, courier, monospace;
+  border:1px solid #000;
+  font-size: 14px;
+}
+
+h2 {margin:0;padding:10px 0;}
+pre {padding:10px 0;background:#f3f3f3;}
+
+#footer {padding:80px 0; text-align:center;font-family:roboto;line-height:42px;}
+#github-link {font-size:32px;vertical-align:middle;}
