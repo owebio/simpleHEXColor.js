@@ -7,7 +7,7 @@ body  {font:14px/1.5 'Noto Sans KR', sans-serif;color:#1C1C1C}
 
 .clr::after {content:"";display:table;clear:both;}
 
-h1 {position:relative;margin:0;padding:40px 0 35px;font-weight: 100;font-size:36px;}
+h1 {position:relative;margin:0;padding:40px 0 40px;margin-bottom:10px;font-weight: 100;font-size:36px;border-bottom:5px solid #AEAEAE}
 /*h1:before {position:absolute;content:"";top:30px;left:0;height:5px;width:50px;background:#2C3894}*/
 #moto {font:italic 18px/18px Roboto, sans-serif;color:#5D5D5D}
 h1 img {float:left; vertical-align: text-top; margin-right: 15px}

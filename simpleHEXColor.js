@@ -10,11 +10,11 @@ var simpleHEXColor = function(hex, parent, title) {
   var result = document.createElement('div');
   result.setAttribute('data-hex', hex);
   result.className         = 'simpleHEXColor';
-  result.style.textShadow += '2px 2px #000, 2px -2px #000, -2px 2px #000, -2px -2px #000';
-  result.style.textShadow  = '2px 1px #000, 2px -1px #000, -2px -1px #000, -2px -1px #000';
-  result.style.textShadow += ',1px -2px #000, 1px 2px #000, 1px -2px #000, -1px -2px #000';
+  result.style.textShadow  = '2px 2px #000, 2px -2px #000, -2px 2px #000, -2px -2px #000';
+  result.style.textShadow += ',2px 1px #000, 2px -1px #000, -2px 1px #000, -2px -1px #000';
+  result.style.textShadow += ',1px 2px #000, 1px -2px #000, -1px 2px #000, -1px -2px #000';
+  result.style.textShadow += ',1px 1px #000, 1px -1px #000, -1px 1px #000, -1px -1px #000';
   result.style.textShadow += ',2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000';
-  result.style.textShadow += ', -1px -1px #000, -1px 1px #000, 1px 1px #000, 1px -1px #000';
   result.style.textShadow += ',-1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000';
   result.style.position    = 'relative';
   result.style.boxSizing   = 'border-box';
